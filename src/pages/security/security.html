@@ -1,0 +1,65 @@
+<!--
+  Generated template for the SecurityPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="primary">
+        <ion-title>Security</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <h1 style="padding-left:16px">SECURITY</h1>
+        <ion-item (click)="changePassword()">
+            <ion-label>Change master password</ion-label>
+        </ion-item>
+        <div class="item">
+            <div class="a3-container a3-row">
+                <ion-label>Fast enter</ion-label>
+                <ion-toggle></ion-toggle>
+            </div>
+            <ion-note>Makes it faster to enter the application without having to tap the ENTER button if the masster password correct
+            </ion-note>
+        </div>
+        <div class="item">
+            <div class="a3-container a3-row">
+                <ion-label>Auto exit</ion-label>
+                <ion-toggle></ion-toggle>
+            </div>
+            <ion-note>
+                The application will automatically exit when the screen turns off
+            </ion-note>
+
+        </div>
+    </ion-list>
+    <div class="item">
+        <h1>FINGGERPRINT</h1>
+        <div class="a3-container a3-row">
+            <ion-label>Enter using fingerprint</ion-label>
+            <ion-toggle></ion-toggle>
+        </div>
+        <ion-note bottom>Android 6.0 or never and compatible hardware is required for using this feature</ion-note>
+    </div>
+
+    <div class="item">
+        <h1>CLIPBOARD</h1>
+        <div on-tap="tap()">
+            <ion-label>Clear clipboard</ion-label>
+            <ion-note left>Never</ion-note>
+        </div>
+    </div>
+
+    <div class="item">
+        <h1>SELF DESTRUCT</h1>
+        <div on-tap="tap()">
+            <ion-label>Fail password attempts</ion-label>
+            <ion-note left>Unlimited</ion-note>
+        </div>
+    </div>
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-header>
+    <ion-navbar color="app">
+        <div class="a3-container a3-row">
+            <ion-title>My Passwords</ion-title>
+        </div>
+    </ion-navbar>
+</ion-header>
+
+<ion-content>
+    <div class="form-container">
+        <div class="form-content">
+            <div class="item-1">
+                <ion-label>Welcome to My Passwords</ion-label>
+                <hr>
+            </div>
+
+            <ion-label stacked style="margin-left:20px; color:blue">Password</ion-label>
+
+            <div class="item-2 a3-container a3-row">
+                <ion-input #input type="password" clearOnEdit="false"></ion-input>
+                <ion-icon name="eye" on-tap="changeOff()" id="on"></ion-icon>
+                <ion-icon name="eye-off" on-tap="changeOn()" id="off" style="display:none"></ion-icon>
+            </div>
+            <ion-buttons right>
+                <button ion-button type="submit" (click)="checkPassword()" color="secondary">Enter</button>
+            </ion-buttons>
+        </div>
+    </div>
+
+</ion-content>
