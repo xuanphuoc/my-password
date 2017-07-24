@@ -16,9 +16,9 @@
 <ion-content>
     <ion-list>
         <h1 style="font-size:14px;font-weight: bold;color:blue;padding-left:16px">APPEARENCE</h1>
-        <div class="item">
-            <ion-label>Fail password attempts</ion-label>
-            <ion-note left>Unlimited</ion-note>
+        <div class="item" on-tap="openSort()">
+            <ion-label>Sort entries</ion-label>
+            <ion-note left>{{check}}</ion-note>
             <hr>
         </div>
         <div class="item">

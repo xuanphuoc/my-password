@@ -13,7 +13,7 @@ export class MyApp {
   rootPage: any ;
 
   constructor(platform: Platform, statusBar: StatusBar, public storage: Storage) {
-
+    //this.storage.clear();
     this.storage.get('hasRegister').then((hasRegister) => {
       if(hasRegister){
         this.rootPage = LoginPage;

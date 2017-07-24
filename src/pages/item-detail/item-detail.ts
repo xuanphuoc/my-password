@@ -26,11 +26,7 @@ export class ItemDetailPage {
     this.loadDatabase();
   }
   loadDatabase() {
-    this.database.getData().then((data) => {
-      if (data) {
-        this.data = data;
-      }
-    });
+    this.data = this.navParams.get('items_filter');
   }
   ionViewDidLoad() {
     //console.log('ionViewDidLoad ItemDetailPage');
