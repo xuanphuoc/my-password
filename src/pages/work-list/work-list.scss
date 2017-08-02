@@ -1,0 +1,23 @@
+page-work-list {
+    .avatar {
+        min-height: 40px;
+        min-width: 40px;
+        border-radius: 50%;
+        background-color: #f53d3d;
+        text-align: center;
+        font-size: 20pt;
+    }
+    .fab {
+        contain: layout;
+        position: relative;
+        overflow: visible;
+    }
+    .fab-label {
+        position: absolute;
+        right: 45px;
+        bottom: -20px;
+    }
+    ion-item-group {
+        display: none;
+    }
+}

@@ -1,3 +1,51 @@
 page-add-form {
-
+    .form-container {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+    }
+    .form-content {
+        display: block;
+        margin-top: 30px;
+        box-sizing: inherit;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .form-title {
+        text-align: center;
+        background-color: #ff8080;
+        padding: 10px;
+    }
+    .button-md {
+        background-color: #ff8080;
+        color: black;
+    }
+    .button-ios {
+        background-color: #ff8080;
+        color: black;
+    }
+    .label-md {
+        margin: 0;
+    }
+    .label-ios {
+        margin: 0;
+    }
+    .toolbar-title-md {
+        color: black;
+    }
+    .toolbar-title-ios {
+        color: black;
+    }
+    .password {
+        width: 80%;
+        float: left;
+    }
+    .eye {
+        width: 20%;
+        text-align: center;
+        padding: 14px;
+        font-size: 1.3em;
+    }
+    // #eye-off {
+    //     display: none;
+    // }
 }

@@ -1,5 +1,5 @@
 <ion-header>
-    <ion-navbar color="primary">
+    <ion-navbar color="danger">
         <ion-title>My Passwords</ion-title>
     </ion-navbar>
 </ion-header>
@@ -12,9 +12,9 @@
                     <div class="item-1">
                         <ion-label>Welcome to My Passwords</ion-label>
                         <hr>
-                        <p><i>Register passwords to use app.</i></p>
+                        <p><i>Create a master password for app</i></p>
                     </div>
-                    <ion-label stacked style="margin-left:20px; color:blue">Password</ion-label>
+                    <ion-label stacked style="margin-left:20px;">Password</ion-label>
                     <div class="item-2 a3-container a3-row">
                         <ion-input #input type="password" clearOnEdit="false"></ion-input>
                         <ion-icon name="eye" on-tap="clickOn()" id="on"></ion-icon>
@@ -23,14 +23,14 @@
                     <p ion-text [hidden]=" input.valid || submitted == false" color="danger" padding-left>
                         Password is more than 5 letters
                     </p>
-                    <ion-label stacked style="margin-left:20px; color:blue">Password</ion-label>
+                    <ion-label stacked style="margin-left:20px">Password</ion-label>
 
                     <div class="item-2 ">
                         <ion-input type="password" #valid></ion-input>
                     </div>
 
                     <ion-buttons right>
-                        <button ion-button type="submit" (click)="checkSame(registerForm)">Register</button>
+                        <button ion-button color="danger" (click)="checkSame(registerForm)">Register</button>
                     </ion-buttons>
                 </ion-list>
             </form>

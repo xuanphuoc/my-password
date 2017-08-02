@@ -1,18 +1,67 @@
 page-item-detail {
-    .container {
-        width: 100%;
-    }
-    .item {
-        width: 80%;
-        color: black;
-        border-bottom: 1px solid black;
-    }
-    ion-input {
-        color: blue;
-    }
     .date {
         margin-top: 20px;
         text-align: right;
         color: #4d4d4d
+    }
+    .form-container {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+    }
+    .form-content {
+        display: block;
+        margin-top: 30px;
+        box-sizing: inherit;
+        box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .form-title {
+        text-align: center;
+        background-color: #ff8080;
+        padding: 10px;
+    }
+    .button-md {
+        background-color: #ff8080;
+        color: black;
+    }
+    .button-ios {
+        background-color: #ff8080;
+        color: black;
+    }
+    .label-md {
+        margin: 0;
+    }
+    .label-ios {
+        margin: 0;
+    }
+    .toolbar-title-md {
+        color: black;
+    }
+    .toolbar-title-ios {
+        color: black;
+    }
+    .password {
+        width: 90%;
+        float: left;
+    }
+    .eyes {
+        width: 10%;
+        text-align: center;
+        padding: 7px;
+        font-size: 1.5em;
+    }
+    .item-border {
+        border-left: 1px solid #dedede;
+    }
+    .row {
+        padding-bottom: 5px;
+    }
+    .button-remove {
+        text-align: center;
+        padding-top: 10px;
+    }
+    .note-css {
+        text-align: right;
+        padding-top: 10px;
     }
 }

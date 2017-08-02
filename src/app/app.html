@@ -1,1 +1,44 @@
-<ion-nav [root]="rootPage"></ion-nav>
+<ion-menu [content]="content">
+    <ion-header>
+        <ion-navbar color="danger">
+            <ion-title>Menu</ion-title>
+        </ion-navbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-list>
+            <ion-list-header>
+                Type
+            </ion-list-header>
+            <button ion-item menuClose *ngFor="let item of typeList" (click)="openPage(item)">
+                <ion-icon item-start name="{{item.icon}}" [color]="isActive(item)" ></ion-icon>
+                {{item.title}}</button>
+        </ion-list>
+
+        <ion-list>
+            <ion-list-header>
+                Database
+            </ion-list-header>
+            <button ion-item menuClose (click)="openDatabase()">
+                <ion-icon item-start name="cloud" color="danger"></ion-icon>
+                Database</button>
+        </ion-list>
+        <ion-list>
+            <ion-list-header>
+                Setting
+            </ion-list-header>
+            <button ion-item menuClose *ngFor="let item of settingList" (click)="openPage(item)">
+                <ion-icon item-start name="{{item.icon}}" color="danger"></ion-icon>
+                {{item.title}}</button>
+        </ion-list>
+        <ion-list>
+            <ion-list-header>
+                About
+            </ion-list-header>
+            <button ion-item menuClose (click)="openAbout()">
+                <ion-icon item-start name="information-circle" color="danger"></ion-icon>
+                About</button>
+        </ion-list>
+    </ion-content>
+</ion-menu>
+<ion-nav [root]="rootPage" main #content></ion-nav>

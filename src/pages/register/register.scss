@@ -22,7 +22,7 @@ page-register {
     }
     ion-input {
         max-width: 80%;
-        border-block-end: 1px solid blue;
+        border-block-end: 1px solid black;
     }
     ion-icon {
         font-size: 25px;
@@ -31,5 +31,8 @@ page-register {
     }
     ion-icon:hover {
         color: black;
+    }
+    .toolbar-md-danger .toolbar-title-md {
+        color: white;
     }
 }

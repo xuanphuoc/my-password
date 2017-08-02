@@ -1,10 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
-import { HomePage } from '../home/home';
+import { PersonPage } from '../person/person';
 
 import { UserDataProvider } from '../../providers/user-data/user-data';
-
 @Component({
     selector: 'page-login',
     templateUrl: 'login.html'
@@ -16,7 +15,7 @@ export class LoginPage {
     @ViewChild('input') myInput;
 
     constructor(
-        public toastCtrl : ToastController,
+        public toastCtrl: ToastController,
         public userData: UserDataProvider,
         public navCtrl: NavController,
     ) {
@@ -31,7 +30,7 @@ export class LoginPage {
     }
 
     ionViewDidLoad() {
-       
+
     }
 
     changeOff() {
@@ -51,13 +50,13 @@ export class LoginPage {
         }, 150);
     }
     login() {
-        this.navCtrl.setRoot(HomePage);
+        this.navCtrl.setRoot(PersonPage);
     }
     checkPassword() {
-        this.userData.getPassword().then((value)=>{
-            if(value == this.myInput.value){
+        this.userData.getPassword().then((value) => {
+            if (value == this.myInput.value) {
                 this.login();
-            }else{
+            } else {
                 this.presentToast();
             }
         });

@@ -4,7 +4,7 @@ import { ToastController } from 'ionic-angular';
 import { NgForm } from '@angular/forms';
 
 import { UserDataProvider } from '../../providers/user-data/user-data';
-import { HomePage } from '../home/home';
+import { PersonPage } from '../person/person';
 
 /**
  * Generated class for the RegisterPage page.
@@ -50,7 +50,7 @@ export class RegisterPage {
   }
   register() {
     this.data.register(this.myInput.value);
-    this.navCtrl.setRoot(HomePage);
+    this.navCtrl.setRoot(PersonPage);
   }
   checkSame(form: NgForm) {
     if (this.myInput.value.length > 5) {

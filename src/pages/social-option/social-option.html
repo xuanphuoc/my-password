@@ -1,0 +1,47 @@
+<!--
+  Generated template for the SocialListPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="danger">
+        <ion-title>Thêm tài khoản mạng xã hội</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+    <ion-list>
+        <button ion-item (click)="clickOption('facebook')">
+      <ion-icon item-start color ="danger" name="logo-facebook"></ion-icon>
+      Facebook
+    </button>
+        <button ion-item (click)="clickOption('google')">
+      <ion-icon item-start color ="danger" name="logo-googleplus"></ion-icon>
+      Google
+    </button>
+        <button ion-item (click)="clickOption('twitter')">
+      <ion-icon item-start color ="danger" name="logo-twitter"></ion-icon>
+      Twitter
+    </button>
+        <button ion-item (click)="clickOption('zalo')">
+      <ion-icon item-start color ="danger" name="logo-whatsapp"></ion-icon>
+      Zalo
+    </button>
+        <button ion-item (click)="clickOption('skype')">
+      <ion-icon item-start color ="danger" name="logo-skype"></ion-icon>
+      Skype
+    </button>
+        <button ion-item (click)="clickOption('zing')">
+      <ion-icon item-start color ="danger" name="musical-notes"></ion-icon>
+      Zing
+    </button>
+        <button ion-item (click)="clickOption('another')">
+      <ion-icon item-start color ="danger" name="bulb"></ion-icon>
+      Khác
+    </button>
+    </ion-list>
+</ion-content>
